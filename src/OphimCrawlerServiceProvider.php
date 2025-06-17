@@ -26,7 +26,7 @@ class OphimCrawlerServiceProvider extends SP
             'hacoidev/ophim-crawler' =>
             [
                 'name' => 'X Crawler',
-                'package_name' => 'hoanganh/x-crawler',
+                'package_name' => 'htanh/3x-crawler',
                 'icon' => 'la la-hand-grab-o',
                 'entries' => [
                     ['name' => 'Crawler', 'icon' => 'la la-hand-grab-o', 'url' => backpack_url('/plugin/ophim-crawler')],
