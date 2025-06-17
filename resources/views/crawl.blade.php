@@ -35,7 +35,7 @@
                                 </select>
                                 <button class="btn btn-sm btn-primary" id="movies-get-handle">Lấy danh sách</button>
                             </div>
-                            <textarea class="form-control" rows="5" name="link">https://sakan.otzo.com/danh-sach/phim-moi-cap-nhat</textarea>
+                            <textarea class="form-control" rows="5" name="link">https://xxvnapi.com/api/phim-moi-cap-nhat</textarea>
                             <small><i>Mỗi link cách nhau 1 dòng</i></small>
                         </div>
                         <div class="form-group col-12">
