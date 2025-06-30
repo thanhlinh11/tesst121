@@ -9,19 +9,19 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Ophim\\Crawler\\OphimCrawler\\": "src/"
+            "xxvnapi\\Crawler\\XxvnapiCrawler\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "hacoidev",
-            "email": "hacoi.dev@gmail.com"
+            "name": "dothanhdev",
+            "email": "dothanh1998g@gmail.com"
         }
     ],
     "extra": {
         "laravel": {
             "providers": [
-                "Ophim\\Crawler\\OphimCrawler\\OphimCrawlerServiceProvider"
+                "Ophim\\Crawler\\XxvnapiCrawler\\OphimCrawlerServiceProvider"
             ]
         }
     },
