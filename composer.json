@@ -3,7 +3,7 @@
     "description": "3x crawler",
     "type": "package",
     "require": {
-        "hacoidev/ophim-core": "^1.0.0",
+        "hacoidev/xxvnapi-core": "^1.0.0",
         "intervention/image": "^2.7"
     },
     "license": "MIT",
