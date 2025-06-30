@@ -21,7 +21,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Ophim\\Crawler\\XxvnapiCrawler\\OphimCrawlerServiceProvider"
+                "Xxvnapi\\Crawler\\XxvnapiCrawler\\XxvnapiCrawlerServiceProvider"
             ]
         }
     },
