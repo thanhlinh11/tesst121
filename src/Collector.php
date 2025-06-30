@@ -1,6 +1,6 @@
 <?php
 
-namespace Ophim\Crawler\OphimCrawler;
+namespace Xxvnapi\Crawler\XxvnapiCrawler;
 
 use Illuminate\Support\Facades\Log;
 use Intervention\Image\ImageManagerStatic as Image;
