@@ -1,6 +1,6 @@
 <?php
 
-namespace Ophim\Crawler\OphimCrawler\Contracts;
+namespace Xxvnapi\Crawler\XxvnapiCrawler\Contracts;
 
 abstract class BaseCrawler
 {
