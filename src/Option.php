@@ -1,6 +1,6 @@
 <?php
 
-namespace Ophim\Crawler\OphimCrawler;
+namespace Xxvnapi\Crawler\XxvnapiCrawler;
 
 use Backpack\Settings\app\Models\Setting;
 use Illuminate\Support\Facades\Cache;
@@ -28,7 +28,7 @@ class Option
     //     $options[$name] = $value;
 
     //     return Setting::updateOrCreate([
-    //         'key' => 'hacoidev/ophim-crawler.options',
+    //         'key' => 'hacoidev/xxvnapi-crawler.options',
     //     ], [
     //         'name' => 'Options',
     //         'field' => json_encode(['name' => 'value', 'type', 'hidden']),
@@ -41,7 +41,7 @@ class Option
     public static function getEntry()
     {
         return Setting::firstOrCreate([
-            'key' => 'hacoidev/ophim-crawler.options',
+            'key' => 'hacoidev/xxvnapi-crawler.options',
         ], [
             'name' => 'Options',
             'field' => json_encode(['name' => 'value', 'type', 'hidden']),
@@ -55,13 +55,13 @@ class Option
         $categories = [];
         $regions = [];
         try {
-            $categories = Cache::remember('ophim_categories', 86400, function () {
-                $data = json_decode(file_get_contents(sprintf('%s/the-loai', config('ophim_crawler.domain', 'https://xxvnapi.com'))), true) ?? [];
+            $categories = Cache::remember('xxvnapi_categories', 86400, function () {
+                $data = json_decode(file_get_contents(sprintf('%s/the-loai', config('xxvnapi_crawler.domain', 'https://xxvnapi.com'))), true) ?? [];
                 return collect($data)->pluck('name', 'name')->toArray();
             });
 
-            $regions = Cache::remember('ophim_regions', 86400, function () {
-                $data = json_decode(file_get_contents(sprintf('%s/quoc-gia', config('ophim_crawler.domain', 'https://xxvnapi.com'))), true) ?? [];
+            $regions = Cache::remember('xxvnapi_regions', 86400, function () {
+                $data = json_decode(file_get_contents(sprintf('%s/quoc-gia', config('xxvnapi_crawler.domain', 'https://xxvnapi.com'))), true) ?? [];
                 return collect($data)->pluck('name', 'name')->toArray();
             });
         } catch (\Throwable $th) {
