@@ -14,12 +14,12 @@ Route::group([
         (array) config('backpack.base.web_middleware', 'web'),
         (array) config('backpack.base.middleware_key', 'admin')
     ),
-    'namespace'  => 'Ophim\Crawler\OphimCrawler\Controllers',
+    'namespace'  => 'Xxvnapi\Crawler\XxvnapiCrawler\Controllers',
 ], function () {
-    Route::get('/plugin/ophim-crawler', 'CrawlController@showCrawlPage');
-    Route::get('/plugin/ophim-crawler/options', 'CrawlerSettingController@editOptions');
-    Route::put('/plugin/ophim-crawler/options', 'CrawlerSettingController@updateOptions');
-    Route::get('/plugin/ophim-crawler/fetch', 'CrawlController@fetch');
-    Route::post('/plugin/ophim-crawler/crawl', 'CrawlController@crawl');
-    Route::post('/plugin/ophim-crawler/get-movies', 'CrawlController@getMoviesFromParams');
+    Route::get('/plugin/xxvnapi-crawler', 'CrawlController@showCrawlPage');
+    Route::get('/plugin/xxvnapi-crawler/options', 'CrawlerSettingController@editOptions');
+    Route::put('/plugin/xxvnapi-crawler/options', 'CrawlerSettingController@updateOptions');
+    Route::get('/plugin/xxvnapi-crawler/fetch', 'CrawlController@fetch');
+    Route::post('/plugin/xxvnapi-crawler/crawl', 'CrawlController@crawl');
+    Route::post('/plugin/xxvnapi-crawler/get-movies', 'CrawlController@getMoviesFromParams');
 });
