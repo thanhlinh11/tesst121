@@ -1,16 +1,16 @@
 <?php
 
-namespace Ophim\Crawler\OphimCrawler;
+namespace Xxvnapi\Crawler\XxvnapiCrawler;
 
-use Ophim\Core\Models\Movie;
+use Xxvnapi\Core\Models\Movie;
 use Illuminate\Support\Str;
-use Ophim\Core\Models\Actor;
-use Ophim\Core\Models\Category;
-use Ophim\Core\Models\Director;
-use Ophim\Core\Models\Episode;
-use Ophim\Core\Models\Region;
-use Ophim\Core\Models\Tag;
-use Ophim\Crawler\OphimCrawler\Contracts\BaseCrawler;
+use Xxvnapi\Core\Models\Actor;
+use Xxvnapi\Core\Models\Category;
+use Xxvnapi\Core\Models\Director;
+use Xxvnapi\Core\Models\Episode;
+use Xxvnapi\Core\Models\Region;
+use Xxvnapi\Core\Models\Tag;
+use Xxvnapi\Crawler\XxvnapiCrawler\Contracts\BaseCrawler;
 
 class Crawler extends BaseCrawler
 {
